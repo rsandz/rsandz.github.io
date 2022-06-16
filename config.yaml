@@ -1,6 +1,6 @@
-baseURL: "http://example.org/"
+baseURL: "https://rsandz.github.io/"
 languageCode: "en-us"
-title: "Ryan Sandoval - Portfolio"
+title: "Ryan Sandoval"
 theme: "papermod"
 params:
   defaultTheme: dark
