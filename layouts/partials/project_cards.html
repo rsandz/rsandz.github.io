@@ -1,18 +1,26 @@
-<div class="card-container mb-8 grid grid-cols-3 gap-2">
+<div class="card-container mb-8 grid grid-cols-1 md:grid-cols-3 gap-2">
   {{range first 5 .}}
   <div class="bg-tertiary rounded-lg flex flex-col">
     <div class="bg-secondary h-6 rounded-t-lg"></div>
     <div class="p-3 flex flex-col grow">
       <h3 class="text-xl font-bold underline">{{.Title}}</h3>
-      <div class="flex-grow normal-list">{{.Content}}</div>
-      {{if .Params.link}}
-      <a
-        href="{{.Params.link}}"
-        class="mt-2 text-primary font-bold hover:text-white hover:underline"
-      >
-        More Info
-      </a>
-      {{end}}
+      <div class="flex-grow normal-list">{{.Summary}}</div>
+      <div class="flex flex-row gap-4">
+        <a
+          href="{{.Permalink}}"
+          class="mt-2 text-primary text-sm font-bold hover:text-white hover:underline"
+        >
+          More Info
+        </a>
+        {{if .Params.link}}
+        <a
+          href="{{.Params.link}}"
+          class="mt-2 text-primary text-sm font-bold hover:text-white hover:underline"
+        >
+          Project Source
+        </a>
+        {{end}}
+      </div>
     </div>
   </div>
   {{end}}
