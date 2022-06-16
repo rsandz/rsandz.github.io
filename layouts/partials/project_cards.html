@@ -1,5 +1,5 @@
 <div class="card-container mb-8 grid grid-cols-3 gap-2">
-  {{range .}}
+  {{range first 5 .}}
   <div class="bg-tertiary rounded-lg flex flex-col">
     <div class="bg-secondary h-6 rounded-t-lg"></div>
     <div class="p-3 flex flex-col grow">
@@ -16,4 +16,12 @@
     </div>
   </div>
   {{end}}
+  <div class="flex items-center justify-center">
+    <a
+      class="p-5 border-solid border-4 border-secondary rounded-lg text-secondary hover:text-white hover:border-white h-fit w-fit text-lg font-bold"
+      href="/projects"
+    >
+      See More
+    </a>
+  </div>
 </div>
