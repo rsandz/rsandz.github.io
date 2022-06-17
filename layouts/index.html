@@ -16,7 +16,14 @@
     </h2>
     <div class="socials">{{partial "social_buttons.html" .}}</div>
   </div>
-  <img class="hidden w-5/12 md:block" src="/images/logo.svg">
+  <img class="hidden w-5/12 md:block" src="/images/logo.svg" />
+</section>
+
+<section class="skillset mb-8">
+  <h1 class="mb-8 text-4xl font-bold underline decoration-primary decoration-4">
+    What I do
+  </h1>
+  {{ partial "large_cards.html" (.Site.GetPage "skills").Pages }}
 </section>
 
 <section class="projects">
