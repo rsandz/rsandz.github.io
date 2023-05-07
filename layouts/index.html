@@ -10,13 +10,12 @@
 
 <section class="h-banner flex flex-1 items-center">
   <div class="sm:h-banner flex flex-col">
-    <h1 class="text-5xl font-bold">Hi, I'm Ryan Sandoval</h1>
-    <h2 class="mt-1 text-2xl md:text-3xl">
-      and I am a <span id="stuff-i-am" class="text-secondary"></span>
+    <h1 class="text-4xl md:text-7xl font-bold">Hi, I'm Ryan&nbspSandoval</h1>
+    <h2 class="mt-1 text-2xl md:text-4xl">
+      and I am <span id="stuff-i-am" class="text-secondary"></span>
     </h2>
     <div class="socials">{{partial "social_buttons.html" .}}</div>
   </div>
-  <img class="hidden w-5/12 md:block" src="/images/logo.svg" />
 </section>
 
 <section class="skillset mb-8">
@@ -43,9 +42,10 @@
 
 <script>
   const strings = [
-    "software developer",
-    "engineering graduate",
-    "technology enthusiast",
+    "a software developer",
+    "an engineering graduate",
+    "an innovator",
+    "a problem solver"
   ];
   var typed = new Typed("#stuff-i-am", {
     strings: strings.map((str) => str + "."),
