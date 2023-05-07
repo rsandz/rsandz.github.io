@@ -1,5 +1,5 @@
 <div class="card-container mb-8 grid grid-cols-1 md:grid-cols-3 gap-2">
-  {{range first 5 .}}
+  {{range first 9 .}}
   <div class="bg-tertiary rounded-lg flex flex-col">
     <div class="bg-secondary h-6 rounded-t-lg"></div>
     <div class="p-3 flex flex-col grow">
@@ -17,19 +17,19 @@
           href="{{.Params.link}}"
           class="mt-2 text-primary text-sm font-bold hover:text-white hover:underline"
         >
-          Project Source
+          Project Link
         </a>
         {{end}}
       </div>
     </div>
   </div>
   {{end}}
-  <div class="flex items-center justify-center">
-    <a
-      class="p-5 border-solid border-4 border-secondary rounded-lg text-secondary hover:text-white hover:border-white h-fit w-fit text-lg font-bold"
-      href="/projects"
-    >
-      See More
-    </a>
-  </div>
+</div>
+<div class="flex items-center justify-center">
+  <a
+    class="p-5 border-solid border-4 border-secondary rounded-lg text-secondary hover:text-white hover:border-white h-fit w-6/12 text-lg font-bold text-center"
+    href="/projects"
+  >
+    See More
+  </a>
 </div>
