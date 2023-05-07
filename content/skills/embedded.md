@@ -5,7 +5,7 @@ image: board.svg
 ---
 
 Having studied computer engineering, I'm can work with a multitude of computer
-technologies to solve problems. These technologies include:
+technologies to solve real-time problems. These technologies include:
 
 - Single Board Computers 
 - Microcontrollers

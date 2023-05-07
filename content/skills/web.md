@@ -11,8 +11,8 @@ that's it's important to use the right tool for the job. However, I commonly
 use these frameworks in my projects:
 
 - React 
-    - Material UI
 - Flask 
 - Docker
 - PyQt (For native client applications)
+- AWS
 
