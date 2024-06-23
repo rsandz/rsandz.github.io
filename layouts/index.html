@@ -7,7 +7,7 @@
     padding: 0;
   }
   .h-banner {
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
   }
 </style>
 
@@ -50,10 +50,10 @@
 
 <script>
   const strings = [
-    "a software developer",
-    "an engineering graduate",
+    "a software engineer",
     "an innovator",
-    "a problem solver"
+    "a problem solver",
+    "a creative thinker",
   ];
   var typed = new Typed("#stuff-i-am", {
     strings: strings.map((str) => str + "."),
