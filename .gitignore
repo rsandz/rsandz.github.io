@@ -2,3 +2,10 @@ _site
 .sass-cache
 .jekyll-metadata
 vendor/
+
+public
+themes
+.git
+.sass-cache
+node_modules
+.hugo_build.lock
